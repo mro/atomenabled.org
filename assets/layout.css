@@ -1,7 +1,7 @@
 body { 
 	font: 10pt/16pt trebuchet ms, verdana, arial,; 
 	color: #555753; 
-	background: #fff url(../images/atom-back500px.gif) no-repeat bottom right; 
+	background: #fff url(./atom-back500px.gif) no-repeat bottom right;
 	}
 h1 	{font-size: 21px; margin-left: 2px;}
 h2 	{
