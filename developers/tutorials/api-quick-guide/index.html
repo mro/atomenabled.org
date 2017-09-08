@@ -1,102 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html lang="en-US">
-<!--<![endif]--><head>
-<meta http-equiv="content-type" content="text/html; charset=utf8">
-<meta name="viewport" content="width=device-width">
-<title>API Quick Guide | Atom Enabled</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<meta name="robots" content="noodp,noydir">
-<link rel="canonical" href="../../../developers/tutorials/api-quick-guide/">
-<link rel="stylesheet" id="twentytwelve-fonts-css" href="../../../assets/css.css" type="text/css" media="all">
-<link rel="stylesheet" id="twentytwelve-style-css" href="../../../assets/style.css" type="text/css" media="all">
-</head>
-
-<body class="page page-id-26 page-child parent-pageid-24 page-template page-template-page-templatesfull-width-php full-width custom-font-enabled single-author">
-  
-<div id="page" class="hfeed site">
-
-<header id="masthead" class="site-header" role="banner">
-  <hgroup>
-    <img src="../../../assets/logo.png"/>
-    <h2 class="site-description"/>
-  </hgroup>
-  <nav id="site-navigation" class="main-navigation" role="navigation">
-    <h3 class="menu-toggle">Menu</h3>
-    <a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
-    <div class="nav-menu">
-      <ul>
-        <li>
-          <a href="../../../">Home</a>
-        </li>
-        <li class="page_item page-item-17 page_item_has_children current_page_ancestor">
-          <a href="../../../developers/">Developers</a>
-          <ul class="children">
-            <li class="page_item page-item-22">
-              <a href="../../../developers/protocol/">Protocol</a>
-            </li>
-            <li class="page_item page-item-20">
-              <a href="../../../developers/syndication/">Syndication</a>
-            </li>
-            <li class="page_item page-item-24 page_item_has_children current_page_ancestor current_page_parent">
-              <a href="../../../developers/tutorials/">Tutorials</a>
-              <ul class="children">
-                <li class="page_item page-item-26 current_page_item">
-                  <a href="../../../developers/tutorials/api-quick-guide/">API Quick Guide</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="page_item page-item-12">
-          <a href="../../../everyone/">Everyone</a>
-        </li>
-        <li class="page_item page-item-14">
-          <a href="../../../publishers/">Publishers</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- #site-navigation -->
-</header>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>API Quick Guide | Atom Enabled</title>
+    <meta name="robots" content="noodp,noydir" />
+    <link rel="canonical" href="../../../developers/tutorials/api-quick-guide/" />
+    <link rel="stylesheet" id="twentytwelve-fonts-css" href="../../../assets/css.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="twentytwelve-style-css" href="../../../assets/style.css" type="text/css" media="all" />
+  </head>
+  <body class="page page-id-26 page-child parent-pageid-24 page-template page-template-page-templatesfull-width-php full-width custom-font-enabled single-author">
+    <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+        <hgroup>
+          <img src="../../../assets/logo.png" />
+          <h2 class="site-description"></h2>
+        </hgroup>
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+          <h3 class="menu-toggle">Menu</h3>
+          <a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+          <div class="nav-menu">
+            <ul>
+              <li>
+                <a href="../../../">Home</a>
+              </li>
+              <li class="page_item page-item-17 page_item_has_children current_page_ancestor">
+                <a href="../../../developers/">Developers</a>
+                <ul class="children">
+                  <li class="page_item page-item-22">
+                    <a href="../../../developers/protocol/">Protocol</a>
+                  </li>
+                  <li class="page_item page-item-20">
+                    <a href="../../../developers/syndication/">Syndication</a>
+                  </li>
+                  <li class="page_item page-item-24 page_item_has_children current_page_ancestor current_page_parent">
+                    <a href="../../../developers/tutorials/">Tutorials</a>
+                    <ul class="children">
+                      <li class="page_item page-item-26 current_page_item">
+                        <a href="../../../developers/tutorials/api-quick-guide/">API Quick Guide</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="page_item page-item-12">
+                <a href="../../../everyone/">Everyone</a>
+              </li>
+              <li class="page_item page-item-14">
+                <a href="../../../publishers/">Publishers</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+<!-- #site-navigation -->
+      </header>
 <!-- #masthead -->
-
-
-	<div id="main" class="wrapper">
-
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-
-							
-	<article id="post-26" class="post-26 page type-page status-publish hentry">
-		<header class="entry-header">
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content">
+          <div id="content" role="main">
+            <article id="post-26" class="post-26 page type-page status-publish hentry">
+              <header class="entry-header">
 											</header>
-
-		<div class="entry-content">
-			<div id="developers">
-<h3>Atom API Quick Guide</h3>
-</div>
-<div id="blog">
-<div>
-<div>Developers &gt; Tutorials &gt; Atom API Quick Guide</div>
-</div>
-<div>
-<h2>AtomAPI Quick Reference</h2>
-<p>Written by Joe Gregorio</p>
-<div>
-<p>The current revision of the AtomAPI is contains quite a few changes 
+              <div class="entry-content">
+                <div id="developers">
+                  <h3>Atom API Quick Guide</h3>
+                </div>
+                <div id="blog">
+                  <div>
+                    <div>Developers &gt; Tutorials &gt; Atom API Quick Guide</div>
+                  </div>
+                  <div>
+                    <h2>AtomAPI Quick Reference</h2>
+                    <p>Written by Joe Gregorio</p>
+                    <div>
+                      <p>The current revision of the AtomAPI is contains quite a few changes 
 from previous revisions. All of those changes have been talked about 
 seperately, but when put together represent a fairly large change to the
  API. Here is Quick Reference for the AtomAPI which also highlights 
 those changes.</p>
-<p>The URIs in the draft AtomAPI RFC are not normative, they are 
-examples. The draft RFC isn&rsquo;t about specifying the form of the URLs that
+                      <p>The URIs in the draft AtomAPI RFC are not normative, they are 
+examples. The draft RFC isn’t about specifying the form of the URLs that
  are to be used. Yes, there are guidelines you should follow when 
 creating URIs, but those are just general guidelines. That is an 
-important document and if you&rsquo;re creating server side software you 
+important document and if you’re creating server side software you 
 should know it already.</p>
-<p>In the end, it&rsquo;s the server that controls the URI space for that 
+                      <p>In the end, it’s the server that controls the URI space for that 
 domain. Now, for convenience that space may be mapped to a file system 
-hierarchy, but again, there&rsquo;s no requirement for that to be true. So 
+hierarchy, but again, there’s no requirement for that to be true. So 
 what does the RFC specify? It lays out the <em>formats</em> of the files that can be returned, and the <em>actions</em>
  that can be performed on the URIs. Note that URIs are embedded in some 
 of those formats. That embedding, that intertwingling of format and URI,
@@ -107,93 +99,93 @@ into short names. Outlined first are the different <strong>types</strong>
  of URIs the AtomAPI deals with. Different types of URIs are 
 distinguished by the methods that are allowed to act on them, their 
 actions, and the content-types that they accept.</p>
-<h3 id="TypesOfURIs">Types of URIs</h3>
-<table summary="AtomAPI URIs and associated Formats and Verbs" cellspacing="0" cellpadding="3" border="1">
-<tbody>
-<tr>
-<th>URI Type</th>
-<th>HTTP Method</th>
-<th>Content Type</th>
-<th>Return values</th>
-</tr>
-<tr>
-<td>Post</td>
-<td>POST</td>
-<td>AtomEntry</td>
-<td>Returns an Edit URI in the Location: header.</td>
-</tr>
-<tr>
-<td>Edit</td>
-<td>GET, PUT, DELETE</td>
-<td>AtomEntry</td>
-<td></td>
-</tr>
-<tr>
-<td>Feed</td>
-<td>GET</td>
-<td>AtomFeed</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Several things are important to note here. First is that both weblog 
+                      <h3 id="TypesOfURIs">Types of URIs</h3>
+                      <table summary="AtomAPI URIs and associated Formats and Verbs" cellspacing="0" cellpadding="3" border="1">
+                        <tbody>
+                          <tr>
+                            <th>URI Type</th>
+                            <th>HTTP Method</th>
+                            <th>Content Type</th>
+                            <th>Return values</th>
+                          </tr>
+                          <tr>
+                            <td>Post</td>
+                            <td>POST</td>
+                            <td>AtomEntry</td>
+                            <td>Returns an Edit URI in the Location: header.</td>
+                          </tr>
+                          <tr>
+                            <td>Edit</td>
+                            <td>GET, PUT, DELETE</td>
+                            <td>AtomEntry</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Feed</td>
+                            <td>GET</td>
+                            <td>AtomFeed</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>Several things are important to note here. First is that both weblog 
 entries and comments on those entries are both created using a <code>Post</code> URI. Now they are probably going to be different URIs, but they are the same <strong>type</strong>
  of URI, i.e. a URI that accepts a POST with a body of a filled in Atom 
 Entry and as a consequence creates a new resource based on that Entry. 
 How to discover the types of URIs and what they are used for is 
 discussed later.</p>
-<p>All of the discovery uses a <code>link</code> tag. The link tag from 
+                      <p>All of the discovery uses a <code>link</code> tag. The link tag from 
 HTML will be used in (X)HTML, and the same tag will be used in the Atom 
 format, with the restriction the value of the <code>rel</code> attribute is case sensitive.</p>
-<dl>
-<dt>Post</dt>
-<dd>
-<dl>
-<dt>Purpose</dt>
-<dd>The Post URI is used to create entries. These can be either full 
+                      <dl>
+                        <dt>Post</dt>
+                        <dd>
+                          <dl>
+                            <dt>Purpose</dt>
+                            <dd>The Post URI is used to create entries. These can be either full 
 entries as in a weblog post, or they can be comments. The client POSTs a
  filled in Atom Entry to this URI.</dd>
-<dt>Finding</dt>
-<dd>For creating a new site Entry, the link tag is used. Note that a 
+                            <dt>Finding</dt>
+                            <dd>For creating a new site Entry, the link tag is used. Note that a 
 link tag is used in both HTML and in the Atom format. A link tag of the 
 following format points to the <code>Post</code> URI for a site. In HTML the link tags are always found in the <code>head</code> element, while in Atom they may appear as children of the <code>Feed</code> and <code>entry</code> elements. In the case of <code>Post</code>, the link tag is found in HTML and as a child of the <code>Feed</code> element only.<p></p>
 <pre><code>&lt;link rel="service.post"
    type="application/x.atom+xml"
    href="URI for Posting goes here"
    title="The name of the site."&gt;</code></pre>
-<p><strong>Note:</strong> Multiple link tags may appear together and can be distinguished by having different &lsquo;rel&rsquo;, &lsquo;type&rsquo; and &lsquo;title&rsquo; attributes.</p>
+<p><strong>Note:</strong> Multiple link tags may appear together and can be distinguished by having different ‘rel’, ‘type’ and ‘title’ attributes.</p>
 </dd>
-</dl>
-</dd>
-<dt>Edit</dt>
-<dd>
-<dl>
-<dt>Purpose</dt>
-<dd>The <code>Edit</code> URI is used to edit an existing Entry. To edit
+                          </dl>
+                        </dd>
+                        <dt>Edit</dt>
+                        <dd>
+                          <dl>
+                            <dt>Purpose</dt>
+                            <dd>The <code>Edit</code> URI is used to edit an existing Entry. To edit
  the Entry the client does a GET on the URI to retrieve the Atom Entry, 
 it then modifies the Entry and then PUTs the Entry back to the same URI.
  Use the DELETE method on the URI to remove the Entry. Note that an 
 Entry could be either a full Entry on a site, or a comment.</dd>
-<dt>Finding</dt>
-<dd>A link tag in either HTML or Atom of the following form will point to the URI for editing an Entry.<p></p>
+                            <dt>Finding</dt>
+                            <dd>A link tag in either HTML or Atom of the following form will point to the URI for editing an Entry.<p></p>
 <pre><code>&lt;link rel="service.edit"
    type="application/x.atom+xml"
    href="URI that handles editing "
    title="Desc/title of Entry."&gt;</code></pre>
 </dd>
-</dl>
-</dd>
-<dt>Feed</dt>
-<dd>
-<dl>
-<dt>Purpose</dt>
-<dd>The <code>Feed</code> URI is used to retrieve an Atom feed. Note 
+                          </dl>
+                        </dd>
+                        <dt>Feed</dt>
+                        <dd>
+                          <dl>
+                            <dt>Purpose</dt>
+                            <dd>The <code>Feed</code> URI is used to retrieve an Atom feed. Note 
 that the feed may contain just Entries for syndication, or may contain 
 additional link tags so that it may be used for browsing/navigating 
 around to other Atom feeds.<p></p>
 </dd>
-<dt>Finding</dt>
-<dd>A typical feed for syndication would be indicated by a link tag of the form:<p></p>
+                            <dt>Finding</dt>
+                            <dd>A typical feed for syndication would be indicated by a link tag of the form:<p></p>
 <pre><code>&lt;link href='URI of feed goes here'
    type='application/x.atom+xml'
    rel='feed'
@@ -211,11 +203,12 @@ is of the form:</p>
    rel='prev'
    title='A nice descriptive title'/&gt;</code></pre>
 </dd>
-</dl>
-</dd>
-</dl>
-<h3 id="AtomEntry">AtomEntry</h3>
-<pre><code>&lt;entry xmlns="http://example.com/newformat#" &gt;
+                          </dl>
+                        </dd>
+                      </dl>
+                      <h3 id="AtomEntry">AtomEntry</h3>
+                      <pre>
+                        <code>&lt;entry xmlns="http://example.com/newformat#" &gt;
   &lt;title&gt;My First Entry&lt;/title&gt;
   &lt;summary&gt;A very boring entry...&lt;/summary&gt;
 
@@ -238,9 +231,11 @@ is of the form:</p>
 
   &lt;/content&gt;
 
-&lt;/entry&gt; </code></pre>
-<h3 id="AtomFeed">AtomFeed</h3>
-<pre><code>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;/entry&gt; </code>
+                      </pre>
+                      <h3 id="AtomFeed">AtomFeed</h3>
+                      <pre>
+                        <code>&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
 &lt;feed version="0.3" xmlns="http://purl.org/atom/ns#"&gt;
 
   &lt;link rel="next" type='application/x.atom+xml'
@@ -322,33 +317,31 @@ is of the form:</p>
   &lt;/entry&gt;
 
 &lt;/feed&gt;
-</code></pre>
-</div>
-</div>
-</div>
-					</div>
+</code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
 <!-- .entry-content -->
-		<footer class="entry-meta">
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-				
-<div id="comments" class="comments-area">
+              <footer class="entry-meta">
+					</footer>
+<!-- .entry-meta -->
+            </article>
+<!-- #post -->
+            <div id="comments" class="comments-area">
 
 	
 	
 			
 </div>
-<!-- #comments .comments-area -->			
-		</div>
+<!-- #comments .comments-area -->
+          </div>
 <!-- #content -->
-	</div>
+        </div>
 <!-- #primary -->
-
-	</div>
+      </div>
 <!-- #main .wrapper -->
-</div>
-
-</div>
-</div>
-</div></body>
+    </div>
+  </body>
 </html>
