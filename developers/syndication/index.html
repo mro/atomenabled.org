@@ -1,7 +1,10 @@
-<html lang="en-US"><!--<![endif]--><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en-US">
+<!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=utf8">
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="../../assets/analytics.html"></script><script async="" type="text/javascript" src="../../assets/ca-pub-3448189540927553.js"></script><script type="text/javascript" src="../../assets/analytics.js" charset="utf-8"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script async="" src="../../assets/analytics.html"></script><script async="" type="text/javascript" src="../../assets/ca-pub-3448189540927553.js"></script><script type="text/javascript" src="../../assets/analytics.js" charset="utf-8"></script>
 
 <script type="text/javascript">archive_analytics.values.service='wb';archive_analytics.values.server_name='wwwb-app43.us.archive.org';archive_analytics.values.server_ms=1165;</script><script type="text/javascript" src="../../assets/wbhack.js" charset="utf-8"></script>
 
@@ -57,7 +60,20 @@ google_ad_height = 90;
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle">Menu</h3>
 			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
-			<div class="nav-menu"><ul><li><a href="http://atomenabled.org/">Home</a></li><li class="page_item page-item-17 page_item_has_children current_page_ancestor current_page_parent"><a href="http://atomenabled.org/developers/">Developers</a><ul class="children"><li class="page_item page-item-22"><a href="http://atomenabled.org/developers/protocol/">Protocol</a></li><li class="page_item page-item-20 current_page_item"><a href="http://atomenabled.org/developers/syndication/">Syndication</a></li><li class="page_item page-item-24 page_item_has_children"><a href="http://atomenabled.org/developers/tutorials/">Tutorials</a><ul class="children"><li class="page_item page-item-26"><a href="http://atomenabled.org/developers/tutorials/api-quick-guide/">API Quick Guide</a></li></ul></li></ul></li><li class="page_item page-item-12"><a href="http://atomenabled.org/everyone/">Everyone</a></li><li class="page_item page-item-14"><a href="http://atomenabled.org/publishers/">Publishers</a></li></ul></div>
+			<div class="nav-menu"><ul>
+<li><a href="http://atomenabled.org/">Home</a></li>
+<li class="page_item page-item-17 page_item_has_children current_page_ancestor current_page_parent">
+<a href="http://atomenabled.org/developers/">Developers</a><ul class="children">
+<li class="page_item page-item-22"><a href="http://atomenabled.org/developers/protocol/">Protocol</a></li>
+<li class="page_item page-item-20 current_page_item"><a href="http://atomenabled.org/developers/syndication/">Syndication</a></li>
+<li class="page_item page-item-24 page_item_has_children">
+<a href="http://atomenabled.org/developers/tutorials/">Tutorials</a><ul class="children"><li class="page_item page-item-26"><a href="http://atomenabled.org/developers/tutorials/api-quick-guide/">API Quick Guide</a></li></ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-12"><a href="http://atomenabled.org/everyone/">Everyone</a></li>
+<li class="page_item page-item-14"><a href="http://atomenabled.org/publishers/">Publishers</a></li>
+</ul></div>
 		</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->
@@ -73,11 +89,12 @@ google_ad_height = 90;
 											</header>
 
 		<div class="entry-content">
-			<h3>Atom Syndication Format – Introduction</h3>
+			<h3>Atom Syndication Format &ndash; Introduction</h3>
 <p><a href="http://atomenabled.org/developers/">Developers</a> &gt; Syndication</p>
 <h2>Contents</h2>
 <ul>
-<li><a href="http://atomenabled.org/developers/syndication/#whatIsAtom">What is Atom?</a>
+<li>
+<a href="http://atomenabled.org/developers/syndication/#whatIsAtom">What is Atom?</a>
 <ul>
 <li><a href="http://atomenabled.org/developers/syndication/#aboutThisDocument">About this document</a></li>
 <li><a href="http://atomenabled.org/developers/syndication/#sampleFeed">Sample feed</a></li>
@@ -109,7 +126,8 @@ google_ad_height = 90;
 <li><a href="http://atomenabled.org/developers/syndication/#extensibility">Extending Atom</a></li>
 <li><a href="http://atomenabled.org/developers/syndication/#seeAlso">See Also</a></li>
 </ul>
-<h3>What is Atom?<a id="whatIsAtom" name="whatIsAtom"></a></h3>
+<h3>What is Atom?<a id="whatIsAtom" name="whatIsAtom"></a>
+</h3>
 <p>Atom is the name of an XML-based Web content and metadata syndication
  format, and an application-level protocol for publishing and editing 
 Web resources belonging to periodically updated websites.</p>
@@ -121,8 +139,10 @@ This document focuses on <a href="http://www.atomenabled.org/developers/syndicat
 <li>All elements described in this document must be in the <a href="http://www.w3.org/2005/Atom">http://www.w3.org/2005/Atom</a> namespace.</li>
 <li>All timestamps in Atom must conform to <a href="http://www.faqs.org/rfcs/rfc3339.html">RFC 3339</a>.</li>
 <li>Unless otherwise specified, all values must be plain text (i.e., no entity-encoded html).</li>
-<li><a href="http://www.w3.org/TR/REC-xml/#sec-lang-tag"><code>xml:lang</code></a> may be used to identify the language of any human readable text.</li>
-<li><a href="http://www.w3.org/TR/xmlbase/"><code>xml:base</code></a> may be used to control how relative <abbr title="Universal Resource Identifier">URI</abbr>s are resolved.</li>
+<li>
+<a href="http://www.w3.org/TR/REC-xml/#sec-lang-tag"><code>xml:lang</code></a> may be used to identify the language of any human readable text.</li>
+<li>
+<a href="http://www.w3.org/TR/xmlbase/"><code>xml:base</code></a> may be used to control how relative <abbr title="Universal Resource Identifier">URI</abbr>s are resolved.</li>
 </ul>
 <p><strong>Sample feed<a id="sampleFeed" name="sampleFeed"></a></strong></p>
 <pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -148,7 +168,7 @@ This document focuses on <a href="http://www.atomenabled.org/developers/syndicat
 <h3 id="feed">Elements of &lt;feed&gt;</h3>
 <p>A Feed consists of some metadata, followed by any number of entries.</p>
 <p><strong>Required feed elements<a id="requiredFeedElements" name="requiredFeedElements"></a></strong><br>
-Here’s a list of the required feed elements, each with a brief description, and an example.</p>
+Here&rsquo;s a list of the required feed elements, each with a brief description, and an example.</p>
 <table cellspacing="40">
 <tbody>
 <tr>
@@ -157,7 +177,7 @@ Here’s a list of the required feed elements, each with a brief description, an
 </tr>
 <tr>
 <td valign="top">id</td>
-<td valign="top">Identifies the feed using a universally unique and permanent <abbr title="Universal Resource Identifier">URI</abbr>. If you have a long-term, renewable lease on your Internet domain name, then you can feel free to use your website’s address.<p></p>
+<td valign="top">Identifies the feed using a universally unique and permanent <abbr title="Universal Resource Identifier">URI</abbr>. If you have a long-term, renewable lease on your Internet domain name, then you can feel free to use your website&rsquo;s address.<p></p>
 <pre>&lt;id&gt;http://example.com/&lt;/id&gt;</pre>
 </td>
 </tr>
@@ -204,8 +224,9 @@ feed elements that you should to be aware of. They are as follows:</p>
 </tr>
 </tbody>
 </table>
-<h3>Optional feed elements<a id="optionalFeedElements" name="optionalFeedElements"></a></h3>
-<p>Here’s a list of optional feed elements.</p>
+<h3>Optional feed elements<a id="optionalFeedElements" name="optionalFeedElements"></a>
+</h3>
+<p>Here&rsquo;s a list of optional feed elements.</p>
 <table cellspacing="40">
 <tbody>
 <tr>
@@ -249,7 +270,7 @@ feed elements that you should to be aware of. They are as follows:</p>
 <tr>
 <td valign="top">rights</td>
 <td valign="top">Conveys information about rights, e.g. copyrights, held in and over the feed. More info <a href="http://atomenabled.org/developers/syndication/#text">here</a>.<p></p>
-<pre>&lt;rights&gt; © 2005 John Doe &lt;/rights&gt;</pre>
+<pre>&lt;rights&gt; &copy; 2005 John Doe &lt;/rights&gt;</pre>
 </td>
 </tr>
 <tr>
@@ -263,7 +284,7 @@ feed elements that you should to be aware of. They are as follows:</p>
 <h3 id="entry">Elements of &lt;entry&gt;</h3>
 <p>An example of an entry would be a single post on a weblog.</p>
 <p><strong>Required Elements of &lt;entry&gt;<a id="requiredEntryElements" name="requiredEntryElements"></a></strong><br>
-Here’s a list of the required feed elements, each with a brief description, and an example.</p>
+Here&rsquo;s a list of the required feed elements, each with a brief description, and an example.</p>
 <table cellspacing="40">
 <tbody>
 <tr>
@@ -334,7 +355,7 @@ attribute), or if the content is encoded in base64. More info <a href="http://at
 </tbody>
 </table>
 <p><strong>Optional elements of &lt;entry&gt;<a id="optionalEntryElements" name="optionalEntryElements"></a></strong><br>
-Here’s a list of optional feed elements.</p>
+Here&rsquo;s a list of optional feed elements.</p>
 <table cellspacing="40">
 <tbody>
 <tr>
@@ -363,12 +384,12 @@ Here’s a list of optional feed elements.</p>
 </tr>
 <tr>
 <td valign="top">source</td>
-<td valign="top">If an <code>entry</code> is copied from one feed into another feed, then the source <code>feed</code>‘s metadata (all child elements of <code>feed</code> other than the <code>entry</code> elements) should be preserved if the source <code>feed</code> contains any of the child elements <code>author,</code> <code>contributor,</code> <code>rights,</code> or <code>category</code> and those child elements are not present in the source <code>entry</code>.<p></p>
+<td valign="top">If an <code>entry</code> is copied from one feed into another feed, then the source <code>feed</code>&lsquo;s metadata (all child elements of <code>feed</code> other than the <code>entry</code> elements) should be preserved if the source <code>feed</code> contains any of the child elements <code>author,</code> <code>contributor,</code> <code>rights,</code> or <code>category</code> and those child elements are not present in the source <code>entry</code>.<p></p>
 <pre>&lt;source&gt;
   &lt;id&gt;http://example.org/&lt;/id&gt;
   &lt;title&gt;Fourty-Two&lt;/title&gt;
   &lt;updated&gt;2003-12-13T18:30:02Z&lt;/updated&gt;
-  &lt;rights&gt;© 2005 Example, Inc.&lt;/rights&gt;
+  &lt;rights&gt;&copy; 2005 Example, Inc.&lt;/rights&gt;
 &lt;/source&gt;</pre>
 </td>
 </tr>
@@ -396,19 +417,24 @@ Here’s a list of optional feed elements.</p>
 <p>Otherwise, if the <code>type</code> attribute starts with <code>text</code>, then an escaped document of this type is contained inline.</p>
 <p>Otherwise, a <a href="http://www.faqs.org/rfcs/rfc3548.html">base64</a> encoded document of the indicated media type is contained inline.</p>
 <p><strong id="link">Link<a name="link"></a></strong><br>
-<code>&lt;link&gt;</code> is patterned after html’s <a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/links.html#h-12.3">link</a> element. It has one required attribute, <code>href</code>, and five optional attributes: <code>rel</code>, <code>type</code>, <code>hreflang</code>, <code>title</code>, and <code>length</code>.</p>
+<code>&lt;link&gt;</code> is patterned after html&rsquo;s <a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/links.html#h-12.3">link</a> element. It has one required attribute, <code>href</code>, and five optional attributes: <code>rel</code>, <code>type</code>, <code>hreflang</code>, <code>title</code>, and <code>length</code>.</p>
 <p><code>href</code> is the <abbr title="Universal Resource Identifier">URI</abbr> of the referenced resource (typically a Web page)</p>
 <p><code>rel</code> contains a single link relationship type. It can be a full <abbr title="Universal Resource Identifier">URI</abbr> (see <a href="http://atomenabled.org/developers/syndication/#extensibility">extensibility</a>), or one of the following predefined values (default=<code>alternate)</code>:</p>
 <ul>
-<li><code>alternate</code>: an alternate representation of the entry or 
+<li>
+<code>alternate</code>: an alternate representation of the entry or 
 feed, for example a permalink to the html version of the entry, or the 
 front page of the weblog.</li>
-<li><code>enclosure</code>: a related resource which is potentially 
+<li>
+<code>enclosure</code>: a related resource which is potentially 
 large in size and might require special handling, for example an audio 
 or video recording.</li>
-<li><code>related</code>: an document related to the entry or feed.</li>
-<li><code>self</code>: the feed itself.</li>
-<li><code>via</code>: the source of the information provided in the entry.</li>
+<li>
+<code>related</code>: an document related to the entry or feed.</li>
+<li>
+<code>self</code>: the feed itself.</li>
+<li>
+<code>via</code>: the source of the information provided in the entry.</li>
 </ul>
 <p><code>type</code> indicates the media type of the resource.</p>
 <p><code>hreflang</code> indicates the language of the referenced resource.</p>
@@ -420,7 +446,7 @@ or video recording.</li>
 <p><code>&lt;uri&gt;</code> contains a home page for the person.</p>
 <p><code>&lt;email&gt;</code> contains an email address for the person.</p>
 <p><strong id="text">Text<a name="text"></a></strong><br>
-<code>&lt;title&gt;</code>, <code>&lt;summary&gt;</code>, <code>&lt;content&gt;</code>, and <code>&lt;rights&gt;</code> contain human-readable text, usually in small quantities. The <code>type</code> attribute determines how this information is encoded (default=”text”)</p>
+<code>&lt;title&gt;</code>, <code>&lt;summary&gt;</code>, <code>&lt;content&gt;</code>, and <code>&lt;rights&gt;</code> contain human-readable text, usually in small quantities. The <code>type</code> attribute determines how this information is encoded (default=&rdquo;text&rdquo;)</p>
 <p>If <code>type="text"</code>, then this element contains plain text with no entity escaped html.</p>
 <pre>&lt;title type="text"&gt;AT&amp;amp;T bought by SBC!&lt;/title&gt;</pre>
 <p>If <code>type="html"</code>, then this element contains entity escaped html.</p>
@@ -433,11 +459,13 @@ or video recording.</li>
     AT&amp;amp;T bought &lt;b&gt;by SBC&lt;/b&gt;!
   &lt;/div&gt;
 &lt;/title&gt;</pre>
-<h3 id="extensibility">Extending Atom<a name="extensibility"></a></h3>
+<h3 id="extensibility">Extending Atom<a name="extensibility"></a>
+</h3>
 <p>The atom content element is designed to support the direct inclusion of other XML vocabularies.</p>
 <p>Any fully qualified <abbr title="Universal Resource Identifier">URI</abbr> may be used a value for the rel attribute of <code>link</code> elements.</p>
 <p>Elements from other namespaces may be included pretty much anywhere. This means that most <a href="http://directory.google.com/Top/Reference/Libraries/Library_and_Information_Science/Technical_Services/Cataloguing/Metadata/RDF/Applications/RSS/Specifications/RSS_1.0_Modules/">RSS 1.0</a> and <a href="http://blogs.law.harvard.edu/tech/directory/5/specifications/rss20ModulesNamespaces">RSS 2.0</a> modules may be used in Atom.</p>
-<h3 id="seeAlso">See Also<a name="seeAlso"></a></h3>
+<h3 id="seeAlso">See Also<a name="seeAlso"></a>
+</h3>
 <ul>
 <li><a href="http://www.atomenabled.org/developers/syndication/atom-format-spec/">The Atom Syndication Format</a></li>
 <li><a href="http://www.intertwingly.net/wiki/pie/KnownAtomFeeds" rel="nofollow">Examples of Atom 1.0 Feeds</a></li>
@@ -447,11 +475,14 @@ or video recording.</li>
 <li><a href="http://www.ietf.org/html.charters/atompub-charter.html" rel="nofollow">IETF Charter</a></li>
 <li><a href="http://www.intertwingly.net/wiki/pie/FrontPage" rel="nofollow">Atom Wiki</a></li>
 </ul>
-<h3 id="seeAlso">Friends<a name="seeAlso"></a></h3>
+<h3 id="seeAlso">Friends<a name="seeAlso"></a>
+</h3>
 <ul>
-<li><a href="http://minecraftforfreex.com/">Minecraft For Free X</a> – Play Minecraft for free online from your browser.</li>
+<li>
+<a href="http://minecraftforfreex.com/">Minecraft For Free X</a> &ndash; Play Minecraft for free online from your browser.</li>
 </ul>
-					</div><!-- .entry-content -->
+					</div>
+<!-- .entry-content -->
 		<footer class="entry-meta">
 					</footer><!-- .entry-meta -->
 	</article><!-- #post -->
@@ -461,11 +492,15 @@ or video recording.</li>
 	
 	
 			
-</div><!-- #comments .comments-area -->			
-		</div><!-- #content -->
-	</div><!-- #primary -->
+</div>
+<!-- #comments .comments-area -->			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
 
-	</div><!-- #main .wrapper -->
+	</div>
+<!-- #main .wrapper -->
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -478,4 +513,6 @@ or video recording.</li>
 
 </script><!-- #page -->
 
-</body></html>
+</div>
+</div></body>
+</html>
