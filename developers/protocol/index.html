@@ -1,0 +1,264 @@
+<html lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>Protocol | Atom Enabled</title>
+
+
+<!--[if lt IE 9]>
+<script src="http://atomenabled.org/atomskin/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<meta name="robots" content="noodp,noydir">
+<link rel="canonical" href="http://atomenabled.org/developers/protocol/">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="../../assets/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="../../assets/style.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://atomenabled.org/atomskin/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<meta name="google-site-verification" content="bmZ9BNTIN3FrIHHmsu5IjJqk5q8ZdWj6ETt7Qii-GHo">
+</head>
+
+<body class="page page-id-22 page-child parent-pageid-17 page-template page-template-page-templatesfull-width-php full-width custom-font-enabled single-author"><div id="wm-ipp" style="display: block; direction: ltr;" lang="en">
+<div style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup><img src="../../assets/logo.png">
+<div style="display:inline; padding-left:17px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3448189540927553";
+/* AE 728 x 90 Header */
+google_ad_slot = "8629309821";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../assets/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" height="90" width="728" frameborder="0"></iframe></ins></ins>
+</div>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<h3 class="menu-toggle">Menu</h3>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul><li><a href="http://atomenabled.org/">Home</a></li><li class="page_item page-item-17 page_item_has_children current_page_ancestor current_page_parent"><a href="http://atomenabled.org/developers/">Developers</a><ul class="children"><li class="page_item page-item-22 current_page_item"><a href="http://atomenabled.org/developers/protocol/">Protocol</a></li><li class="page_item page-item-20"><a href="http://atomenabled.org/developers/syndication/">Syndication</a></li><li class="page_item page-item-24 page_item_has_children"><a href="http://atomenabled.org/developers/tutorials/">Tutorials</a><ul class="children"><li class="page_item page-item-26"><a href="http://atomenabled.org/developers/tutorials/api-quick-guide/">API Quick Guide</a></li></ul></li></ul></li><li class="page_item page-item-12"><a href="http://atomenabled.org/everyone/">Everyone</a></li><li class="page_item page-item-14"><a href="http://atomenabled.org/publishers/">Publishers</a></li></ul></div>
+		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+							
+	<article id="post-22" class="post-22 page type-page status-publish hentry">
+		<header class="entry-header">
+											</header>
+
+		<div class="entry-content">
+			<div id="developers">
+<h3>Atom Publishing Protocol – Introduction</h3>
+</div>
+<div id="blog">
+<div>
+<div><a href="http://www.atomenabled.org/developers/">Developers</a> &gt; Protocol</div>
+</div>
+<h2>Contents</h2>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/#whatIsAtom">What is Atom?</a>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/#aboutThisDocument">About this document</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#generalConsiderations">General Considerations</a></li>
+</ul>
+</li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#service">Service Documents</a>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appService">The <code>app:service</code> Element</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appWorkspace">The <code>app:workspace</code> Element</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appCollection">The <code>app:collection</code> Element</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appAccept">The <code>app:accept</code> Element</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appCategories1">The <code>app:categories</code> Element</a></li>
+</ul>
+</li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#category">Category Documents</a>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appCategories2">The <code>app:categories</code> Element</a></li>
+</ul>
+</li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#collection">Collection Documents</a>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/#post">The <code>POST</code> Method</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#slug">The <code>Slug</code> Header</a></li>
+</ul>
+</li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#entry">Entry Resources</a>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appEdited">The <code>app:edited</code> Element</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appControl">The <code>app:control</code> Element</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#appDraft">The <code>app:draft</code> Element</a></li>
+</ul>
+</li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#mediaResource">Media Resources</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#mediaLink">Media Link Entries</a></li>
+<li><a href="http://www.atomenabled.org/developers/protocol/#seeAlso">See Also</a></li>
+</ul>
+<h2>What is Atom?<a id="whatIsAtom" name="whatIsAtom"></a></h2>
+<p>Atom is the name of an XML-based Web content and metadata syndication
+ format, and an application-level protocol for publishing and editing 
+Web resources.</p>
+<p>The Atom Publishing Protocol is an application-level protocol for publishing and editing Web Resources using <a title="Hypertext Transfer Protocol — HTTP/1.1" href="http://tools.ietf.org/html/rfc2616">HTTP</a> and <a title="Extensible Markup Language (XML) 1.0 (Fourth Edition)" href="http://www.w3.org/TR/2006/REC-xml-20060816/">XML</a>.</p>
+<h3>About this document<a id="aboutThisDocument" name="aboutThisDocument"></a></h3>
+<p>This document focuses on <a href="http://www.atomenabled.org/developers/protocol/atom-protocol-spec.php">The Atom Publishing Protocol</a> produced by the <a title="Internet Engineering Task Force" href="http://www.ietf.org/">IETF</a> <a href="http://www.ietf.org/html.charters/atompub-charter.html">AtomPub Working Group</a>. In the event that this document differs from the RFC, the RFC is to be considered authoritative.</p>
+<h3>General considerations:<a id="generalConsiderations" name="generalConsiderations"></a></h3>
+<ul>
+<li>The Terms that are used in this introduction are defined in the <a href="http://www.atomenabled.org/developers/protocol/atom-protocol-spec.php#terminology">Terminology</a> section of the Atom Publishing Protocol specification</li>
+<li>All <code>atom:*</code> elements described in this document must be in the <a href="http://www.w3.org/2005/Atom">http://www.w3.org/2005/Atom</a> namespace.</li>
+<li>All <code>app:*</code> elements described in this document must be in the <a href="http://www.w3.org/2007/app">http://www.w3.org/2007/app</a> namespace.</li>
+<li><a href="http://www.w3.org/TR/REC-xml/#sec-lang-tag"><code>xml:lang</code></a> may be used to identify the language of any human readable text.</li>
+<li><a href="http://www.w3.org/TR/xmlbase/"><code>xml:base</code></a> may be used to control how relative <abbr title="Universal Resource Identifier">URI</abbr>s are resolved.</li>
+<li>Servers can choose to accept, reject, delay, moderate, censor, 
+reformat, translate, relocate, or re-categorize the content submitted to
+ them. Only some of these choices are immediately relayed back to the 
+client in responses to client requests. As a result, client software 
+needs to be flexible and accept whatever the server decides to provide 
+as responses.</li>
+<li>Implementers are advised to pay attention to <a href="http://www.atomenabled.org/developers/protocol/atom-protocol-spec.php#etags">cache controls</a> and to make use of the mechanisms available in HTTP when editing Resources.</li>
+<li>Foreign markup can be used anywhere within a Category or Service Document, or within an <code>app:control</code> element.</li>
+</ul>
+<h2>Service Documents<a id="service" name="service"></a></h2>
+<p>Applicable HTTP methods: <code>GET</code>.</p>
+<p>Service Documents enable the discovery of the capabilities and locations of Collections: <a href="http://www.atomenabled.org/developers/protocol/atom-protocol-spec.php#appdocs_example">(example)</a>.</p>
+<p>Service Documents are identified with the <code>application/atomsvc+xml</code> media type.</p>
+<h3><a id="appService" href="http://www.atomenabled.org/developers/protocol/#appService" name="appService">The <code>app:service</code> Element</a></h3>
+<p>An <code>app:service</code> element contains one or more Workspaces.</p>
+<h3><a id="appWorkspace" href="http://www.atomenabled.org/developers/protocol/#appWorkspace" name="appWorkspace">The <code>app:workspace</code> Element</a></h3>
+<p>An <code>app:workspace</code> element contains an <code>atom:title</code> element which provides a human-readable title for the Workspace. An <code>app:workspace</code> element can also contain any number of Collections.</p>
+<h3><a id="appCollection" href="http://www.atomenabled.org/developers/protocol/#appCollection" name="appCollection">The <code>app:collection</code> Element</a></h3>
+<p>When present in an <code>app:workspace,</code> an <code>app:collection</code> element describes a Collection of Resources available for editing. When present in an <code>atom:feed</code> or <code>atom:source</code> element in an Atom Feed Document, it identifies a Collection by which new Entries can be added to appear in the feed.</p>
+<p>The <code>app:collection</code> element has one required attribute, <code>href</code>, whose value gives the IRI of the Collection.</p>
+<p>An <code>app:collection</code> contains one <code>atom:title</code> element which provides a human-readable title for the Collection. An <code>app:collection</code> element may also contain any number of <code>app:accept</code> and <code>app:collection</code> elements.</p>
+<h3><a id="appAccept" href="http://www.atomenabled.org/developers/protocol/#appAccept" name="appAccept">The <code>app:accept</code> Element</a></h3>
+<p>The value of an <code>app:accept</code> element is a media range as defined by <a title="Hypertext Transfer Protocol — HTTP/1.1" href="http://tools.ietf.org/html/rfc2616#section-14.1">HTTP</a> and specifies a type of representation that can be <code>POST</code>ed to a Collection. A value of <code>application/atom+xml;type=entry</code> indicates that Atom Entry Documents can be <code>POST</code>ed to the Collection.</p>
+<p>If no <code>app:accept</code> element is present, only Atom Entry Documents can be <code>POST</code>ed to the Collection. If only one <code>app:accept</code> element exists and it is empty, the Collection does not support the creation of new Entries.</p>
+<h3><a id="appCategories1" href="http://www.atomenabled.org/developers/protocol/#appCategories1" name="appCategories1">The <code>app:categories</code> Element</a></h3>
+<p>An <code>app:categories</code> element may contain an <code>href</code> attribute, whose value is the location of a Category Document. Alternately, an <code>app:categories</code> element can be included inline in a Service Document. When included inline, it has the same format and meaning as an <code>app:categories</code> element in a separate Categories Document.</p>
+<h2>Category Documents<a id="category" name="category"></a></h2>
+<p>Applicable HTTP methods: <code>GET</code>.</p>
+<p>Category Documents indicate the categories allowed in a Collection: <a href="http://www.atomenabled.org/developers/protocol/atom-protocol-spec.php#appdocs_example">(example)</a>.</p>
+<p>Category Documents are identified with the <code>application/atomcat+xml</code> media type.</p>
+<h3><a id="appCategories2" href="http://www.atomenabled.org/developers/protocol/#appCategories2" name="appCategories2">The <code>app:categories</code> Element</a></h3>
+<p>An <code>app:categories</code> element can contain any number of <code>atom:category</code> elements.</p>
+<p>An <code>atom:category</code> child element that has no “scheme” attribute inherits the attribute from its <code>app:categories</code> parent.</p>
+<p>An <code>app:categories</code> element can contain a “fixed” attribute, with a value of either <code>yes</code> or <code>no</code>, indicating whether the server accepts <code>POST</code>s of Entry Resources which contain categories not in this list. The default for this attribute is <code>no</code>.</p>
+<h2>Collection Documents<a id="collection" name="collection"></a></h2>
+<p>Applicable HTTP methods: <code>GET</code> and <code>POST</code>.</p>
+<p>A Collection is represented by an <a href="http://www.atomenabled.org/developers/syndication/#feed">Atom Feed Document</a>.</p>
+<p>Feed Documents may contain a partial list of the Collection’s 
+members, and a link to the next partial list feed. The first such 
+partial list returned will contain the most recently edited member 
+Resources and an <code>atom:link</code> with a <code>next</code> relation whose <code>href</code>
+ value is the URI of the next partial list of the Collection. This next 
+partial list will contain the next most recently edited set of Member 
+Resources, and so on. In addition to the <code>next</code> relation, partial list feeds may contain link elements with <code>rel</code> attribute values of <code>previous</code>, <code>first</code>, and <code>last</code>, that can be used to navigate through the complete set of entries in the Collection.</p>
+<p>Entries in a Collection Document should be ordered by their <code>app:edited</code> property, with the most recently edited Entries coming first in the document order.</p>
+<p>A Resource whose IRI is listed in a Collection is called a Member 
+Resource. The protocol defines two kinds of Member Resources — Entry 
+Resources and Media Resources. A Media Resource is described within a 
+Collection using an Entry called a Media Link Entry.</p>
+<p>Entries in a collection contain <code>atom:link</code> elements with a link relation of <code>edit</code>,
+ and some subset of metadata information about the entry itself. As the 
+Atom Entry in the Collection Feed need not always be a full 
+representation of an Entry Resource, clients should perform a <code>GET</code> on the URI of the Member Entry before editing it.</p>
+<p>Media Link Entries in a collection contain an additional <code>atom:link</code> elements with a link relation of <code>edit-media</code>. If Media Link Entries contain multiple link relations with a value of <code>edit-media</code>, these links must all differ in the values that they provide for <code>type</code> and/or <code>hreflang</code> attributes.</p>
+<h3><a id="post" href="http://www.atomenabled.org/developers/protocol/#post" name="post">The <code>POST</code> Method</a></h3>
+<p><code>POST</code> is used to create a new, dynamically named, Member 
+Resource. When the client submits non-Atom-Entry representations to a 
+Collection for creation, two Resources are always created — a Media 
+Entry for the requested Resource, and a Media Link Entry for metadata 
+about the Resource that will appear in the Collection.</p>
+<p>The server can signal the media types it will accept using the <code>app:accept</code> element in the Service Document.</p>
+<p>Successful member creation is indicated with a <code>201</code> (<code>Created</code>) response code. When the Collection responds with a status code of <code>201</code>,
+ it should also return a response body which contains an Atom Entry 
+Document representing the newly created Resource. Since the server is 
+free to alter the <code>POST</code>ed Entry, for example, by changing the content of the <code>atom:id</code>
+ element, returning the Entry can be useful to the client, enabling it 
+to correlate the client and server views of the new Entry.</p>
+<p>When a Member Resource is created, its Member Entry URI is returned in a <code>Location</code> header in the Collection’s response.</p>
+<p>If the creation request contained an Atom Entry Document, the client 
+can assume that the response entity is a complete representation of the 
+newly created Entry only if the response from the server also contains a
+ <code>Content-Location</code> header that matches the <code>Location</code> header.</p>
+<h3><a id="slug" href="http://www.atomenabled.org/developers/protocol/#slug" name="slug">The <code>Slug</code> Header</a></h3>
+<p><code>Slug</code> is an <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec7.html#sec7.1">HTTP entity-header</a> whose presence in a <code>POST</code>
+ to a Collection constitutes a request by the client to use the header’s
+ value as part of any URIs that would normally be used to retrieve the 
+to-be-created Entry or Media Resources.</p>
+<p>Servers may use, alter, or ignore the value of the <code>Slug</code> 
+header when creating the Member URI of the newly created Resource, for 
+instance, by using some or all of the words in the value for the last 
+URI segment. Servers may also use the value when creating the <code>atom:id,</code> or as the title of a Media Link Entry.</p>
+<h2>Entry Resources<a id="entry" name="entry"></a></h2>
+<p>Applicable HTTP methods: <code>GET</code>, <code>PUT</code>, and <code>DELETE</code>.</p>
+<p>Entry Resources are represented as <a href="http://www.atomenabled.org/developers/syndication/#entry">Atom Entry Documents</a>.</p>
+<p>A Member Entry should contain an <code>atom:link</code> element with a link relation of <code>edit</code>, which indicates the Member URI.</p>
+<h3><a id="appEdited" href="http://www.atomenabled.org/developers/protocol/#appEdited" name="appEdited">The <code>app:edited</code> Element</a></h3>
+<p>The <code>app:edited</code> element is a <a href="http://www.atomenabled.org/developers/syndication/atom-format-spec.php#date.constructs">Date construct</a>
+ whose content indicates the last time an Entry was edited. If the entry
+ has not been edited yet, the content indicates the time it was created.</p>
+<h3><a id="appControl" href="http://www.atomenabled.org/developers/protocol/#appControl" name="appControl">The <code>app:control</code> Element</a></h3>
+<p>The <code>app:control</code> element can contain an <code>app:draft</code> element as defined below.</p>
+<h3><a id="appDraft" href="http://www.atomenabled.org/developers/protocol/#appDraft" name="appDraft">The <code>app:draft</code> Element</a></h3>
+<p>If the value is <code>no</code>, this indicates a client request that the Member Resource be made publicly visible. If the <code>app:draft</code> element is not present, the default value is <code>no</code>.</p>
+<h2>Media Resources<a id="mediaResource" name="mediaResource"></a></h2>
+<p>Applicable HTTP methods: <code>GET</code>, <code>PUT</code>, and <code>DELETE</code>.</p>
+<p>Media Resources can have representations in any media type.</p>
+<h2>Media Link Entries<a id="mediaLink" name="mediaLink"></a></h2>
+<p>Applicable HTTP methods: <code>GET</code>, <code>PUT</code>, and <code>DELETE</code>.</p>
+<p>A Media Link Entry is represented as an Atom Entry and contains the 
+metadata and IRI of the (perhaps non-textual) Media Resource. The Media 
+Link Entry thus makes the metadata about the Media Resource separately 
+available for retrieval and alteration.</p>
+<p>Successful responses to creation requests will include the URI of the Media Link Entry in the <code>Location</code> header. The Media Link Entry should contain an <code>atom:link</code> element with a link relation of <code>edit-media</code> that contains the Media Resource IRI. The Media Link Entry will also have an <code>atom:content</code> element with a <code>src</code> attribute. The value of the <code>src</code> attribute is an IRI for the newly created Media Resource. The IRI of the <code>src</code> attribute on the <code>atom:content</code> element need not be the same as the Media Resource IRI. For example, the <code>src</code> attribute value might instead be a link into a static cache or content distribution network and not the Media Resource IRI.</p>
+<p>Note that Atom Entries must contain an <code>atom:summary</code> element. Thus, upon successful creation of a Media Link Entry, a server may choose to populate the <code>atom:summary</code> element (as well as any other mandatory elements such as <code>atom:id,</code> <code>atom:author,</code> and <code>atom:title</code>) with content derived from the <code>POST</code>ed entity or from any other source. A server might not allow a client to modify the server-selected values for these elements.</p>
+<h2 id="seeAlso">See Also<a name="seeAlso"></a></h2>
+<ul>
+<li><a href="http://www.atomenabled.org/developers/protocol/atom-protocol-spec.php">The Atom Publishing Protocol</a></li>
+<li><a href="http://www.tbray.org/ape/">Atom Protocol Exerciser</a></li>
+<li><a href="http://codex.wordpress.org/AtomPub">AtomPub « WordPress Codex</a></li>
+<li><a href="http://www.ietf.org/html.charters/atompub-charter.html">IETF Charter</a></li>
+<li><a href="http://www.intertwingly.net/wiki/pie/FrontPage">Atom Wiki</a></li>
+</ul>
+</div>
+					</div><!-- .entry-content -->
+		<footer class="entry-meta">
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+				
+<div id="comments" class="comments-area">
+
+	
+	
+			
+</div><!-- #comments .comments-area -->			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//web.archive.org/web/20150506070453/http://www.google/-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46223003-1', 'atomenabled.org');
+  ga('send', 'pageview');
+
+</script><!-- #page -->
+
+</body></html>
