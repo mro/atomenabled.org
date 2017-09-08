@@ -155,11 +155,11 @@ Web resources.</p>
                   <p>The Atom Publishing Protocol is an application-level protocol for publishing and editing Web Resources using <a title="Hypertext Transfer Protocol — HTTP/1.1" href="http://tools.ietf.org/html/rfc2616">HTTP</a> and <a title="Extensible Markup Language (XML) 1.0 (Fourth Edition)" href="http://www.w3.org/TR/2006/REC-xml-20060816/">XML</a>.</p>
                   <h3>About this document<a id="aboutThisDocument" name="aboutThisDocument"></a>
 </h3>
-                  <p>This document focuses on <a href="../../developers/protocol/atom-protocol-spec.php">The Atom Publishing Protocol</a> produced by the <a title="Internet Engineering Task Force" href="http://www.ietf.org/">IETF</a> <a href="http://www.ietf.org/html.charters/atompub-charter.html">AtomPub Working Group</a>. In the event that this document differs from the RFC, the RFC is to be considered authoritative.</p>
+                  <p>This document focuses on <a href="../../developers/protocol/atom-protocol-spec/">The Atom Publishing Protocol</a> produced by the <a title="Internet Engineering Task Force" href="http://www.ietf.org/">IETF</a> <a href="http://www.ietf.org/html.charters/atompub-charter.html">AtomPub Working Group</a>. In the event that this document differs from the RFC, the RFC is to be considered authoritative.</p>
                   <h3>General considerations:<a id="generalConsiderations" name="generalConsiderations"></a>
 </h3>
                   <ul>
-                    <li>The Terms that are used in this introduction are defined in the <a href="../../developers/protocol/atom-protocol-spec.php#terminology">Terminology</a> section of the Atom Publishing Protocol specification</li>
+                    <li>The Terms that are used in this introduction are defined in the <a href="../../developers/protocol/atom-protocol-spec/#terminology">Terminology</a> section of the Atom Publishing Protocol specification</li>
                     <li>All <code>atom:*</code> elements described in this document must be in the <a href="http://www.w3.org/2005/Atom">http://www.w3.org/2005/Atom</a> namespace.</li>
                     <li>All <code>app:*</code> elements described in this document must be in the <a href="http://www.w3.org/2007/app">http://www.w3.org/2007/app</a> namespace.</li>
                     <li><a href="http://www.w3.org/TR/REC-xml/#sec-lang-tag"><code>xml:lang</code></a> may be used to identify the language of any human readable text.</li>
@@ -170,13 +170,13 @@ reformat, translate, relocate, or re-categorize the content submitted to
 client in responses to client requests. As a result, client software 
 needs to be flexible and accept whatever the server decides to provide 
 as responses.</li>
-                    <li>Implementers are advised to pay attention to <a href="../../developers/protocol/atom-protocol-spec.php#etags">cache controls</a> and to make use of the mechanisms available in HTTP when editing Resources.</li>
+                    <li>Implementers are advised to pay attention to <a href="../../developers/protocol/atom-protocol-spec/#etags">cache controls</a> and to make use of the mechanisms available in HTTP when editing Resources.</li>
                     <li>Foreign markup can be used anywhere within a Category or Service Document, or within an <code>app:control</code> element.</li>
                   </ul>
                   <h2>Service Documents<a id="service" name="service"></a>
 </h2>
                   <p>Applicable HTTP methods: <code>GET</code>.</p>
-                  <p>Service Documents enable the discovery of the capabilities and locations of Collections: <a href="../../developers/protocol/atom-protocol-spec.php#appdocs_example">(example)</a>.</p>
+                  <p>Service Documents enable the discovery of the capabilities and locations of Collections: <a href="../../developers/protocol/atom-protocol-spec/#appdocs_example">(example)</a>.</p>
                   <p>Service Documents are identified with the <code>application/atomsvc+xml</code> media type.</p>
                   <h3>
                     <a id="appService" href="../../developers/protocol/#appService" name="appService">The <code>app:service</code> Element</a>
@@ -204,7 +204,7 @@ as responses.</li>
                   <h2>Category Documents<a id="category" name="category"></a>
 </h2>
                   <p>Applicable HTTP methods: <code>GET</code>.</p>
-                  <p>Category Documents indicate the categories allowed in a Collection: <a href="../../developers/protocol/atom-protocol-spec.php#appdocs_example">(example)</a>.</p>
+                  <p>Category Documents indicate the categories allowed in a Collection: <a href="../../developers/protocol/atom-protocol-spec/#appdocs_example">(example)</a>.</p>
                   <p>Category Documents are identified with the <code>application/atomcat+xml</code> media type.</p>
                   <h3>
                     <a id="appCategories2" href="../../developers/protocol/#appCategories2" name="appCategories2">The <code>app:categories</code> Element</a>
@@ -300,7 +300,7 @@ available for retrieval and alteration.</p>
 </h2>
                   <ul>
                     <li>
-                      <a href="../../developers/protocol/atom-protocol-spec.php">The Atom Publishing Protocol</a>
+                      <a href="../../developers/protocol/atom-protocol-spec/">The Atom Publishing Protocol</a>
                     </li>
                     <li>
                       <a href="http://www.tbray.org/ape/">Atom Protocol Exerciser</a>
